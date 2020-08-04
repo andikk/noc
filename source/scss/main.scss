@@ -1,0 +1,96 @@
+//присвоили значения переменным бутсрапа
+$enable-responsive-font-sizes: true;
+$primary-color: #000000;
+$secondary-color: #bbbbbb;
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "block/header";
+@import "block/navigation";
+
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  margin-right: 0.3rem;
+  margin-bottom: 0.1rem;
+
+  &--no-margin {
+    margin-right: 0;
+  }
+}
+
+a[href$=".pdf"]::before,
+a[href$=".doc"]::before,
+a[href$=".zip"]::before {
+  width: 19px;
+  height: 19px;
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 3px;
+  padding: 11px;
+  background-position: center;
+}
+
+a[href$=".pdf"]::before {
+  background-image: url("../img/document-file-pdf.svg");
+}
+
+a[href$=".doc"]::before {
+  background-image: url("../img/file-word.svg");
+}
+
+a[href$=".docx"]::before {
+  background-image: url("../img/file-word.svg");
+}
+
+a[href$=".zip"]::before {
+  background-image: url("../img/file-zip.svg");
+}
+
+.content {
+  & p,
+  & li {
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.container {
+  max-width: 1920px;
+}
