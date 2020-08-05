@@ -1,16 +1,18 @@
-//присвоили значения переменным бутсрапа
-$enable-responsive-font-sizes: true;
-$primary-color: #000000;
+$primary-color: #4d9a7b;
 $secondary-color: #bbbbbb;
+$tablet-size: 768px;
 
 * {
   font-family: "Roboto", sans-serif;
 }
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+//@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "block/normalize";
 @import "block/header";
 @import "block/navigation";
-
+@import "block/content";
+@import "block/contact";
+@import "block/footer";
 
 
 .visually-hidden:not(:focus):not(:active),
@@ -75,7 +77,7 @@ a[href$=".zip"]::before {
   background-image: url("../img/file-zip.svg");
 }
 
-.content {
+.user-content {
   & p,
   & li {
     font-size: 20px;
@@ -90,7 +92,19 @@ a[href$=".zip"]::before {
   }
 }
 
-
 .container {
   max-width: 1920px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin: 0 auto;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-size) {
+    flex-direction: column-reverse;
+  }
 }

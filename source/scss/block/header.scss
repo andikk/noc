@@ -1,26 +1,29 @@
 .header {
-  border: 1px solid grey;
 
-  @include media-breakpoint-up(md) {
+  & p {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-size) {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
   }
 
   &__brand {
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: none;
 
-    @include media-breakpoint-up(md) {
+    @media (min-width: $tablet-size) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       flex: 0 0 100px;
     }
 
     &--lg {
       display: none;
 
-      @include media-breakpoint-up(md) {
+      @media (min-width: $tablet-size) {
         display: flex;
         flex: 0 0 130px;
       }
@@ -30,62 +33,19 @@
   &__logo {
     flex: 0 0 40px;
 
-    @include media-breakpoint-up(md) {
+    @media (min-width: $tablet-size) {
       flex: auto;
     }
   }
 
   &__info {
-    border: 1px solid blue;
+    width: 100%;
+  }
 
-    @include media-breakpoint-up(md) {
-      flex: 1;
+  &__info-wrapper {
+    @media (min-width: $tablet-size) {
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
-    }
-  }
-
-  &__info-subtitle,
-  &__info-subtitle {
-    & p {
-      margin: 0;
-    }
-  }
-
-
-  &__toggler {
-    display: block;
-    background-color: transparent;
-    border: 1px solid $primary-color;
-    border-radius: 3px;
-    z-index: 10;
-
-    @include media-breakpoint-up(md) {
-      display: none;
-    }
-
-    &-bar1,
-    &-bar2,
-    &-bar3 {
-      display: block;
-      width: 35px;
-      height: 5px;
-      background-color: $primary-color;
-      margin: 6px 0;
-      transition: 0.4s;
-    }
-
-    .js-change &-bar1 {
-      transform: rotate(-45deg) translate(-9px, 6px);
-    }
-
-    .js-change &-bar2 {
-      opacity: 0;
-    }
-
-    .js-change &-bar3 {
-      transform: rotate(45deg) translate(-8px, -8px);
     }
   }
 }

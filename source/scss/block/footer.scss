@@ -1,0 +1,27 @@
+.footer {
+  color: white;
+  background-color: $primary-color;
+
+  &__wrapper {
+    @media (min-width: $tablet-size) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+
+  &__col1 {
+    @media (min-width: $tablet-size) {
+      flex: 0 0 100px;
+    }
+  }
+
+  &__col2 {
+    flex: 1;
+  }
+
+  &__col3 {
+    flex: 1;
+  }
+
+}

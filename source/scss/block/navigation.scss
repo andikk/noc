@@ -1,15 +1,61 @@
 .navigation {
 
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    @media (min-width: $tablet-size) {
+      display: none;
+    }
+  }
+
+  &__toggler {
+    display: block;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    border-radius: 3px;
+    z-index: 10;
+
+    @media (min-width: $tablet-size) {
+      display: none;
+    }
+
+    &-bar1,
+    &-bar2,
+    &-bar3 {
+      display: block;
+      width: 35px;
+      height: 5px;
+      background-color: $primary-color;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    .js-change &-bar1 {
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .js-change &-bar2 {
+      opacity: 0;
+    }
+
+    .js-change &-bar3 {
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+  }
+
   &__list {
     list-style: none;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 6px;
     max-height: 0;
     overflow-y: hidden;
-    margin-bottom: 0;
+    margin: 0;
 
-    @include media-breakpoint-up(md) {
+    @media (min-width: $tablet-size) {
       display: flex;
       flex-wrap: wrap;
       align-items: stretch;
@@ -36,18 +82,15 @@
     width: 100%;
     font-size: 1rem;
 
-    @include media-breakpoint-up(md) {
+    @media (min-width: $tablet-size) {
       text-align: center;
     }
   }
 
   &__item {
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px 8px;
 
-    @include media-breakpoint-up(md) {
+    @media (min-width: $tablet-size) {
       display: flex;
       flex-wrap: wrap;
       flex: 1 1 auto;

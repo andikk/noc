@@ -1,0 +1,15 @@
+.contact {
+  position: relative;
+
+  &__box {
+    @media (min-width: $tablet-size) {
+      padding: 2rem;
+      width: 200px;
+      position: absolute;
+      top: -15px;
+      right: 10%;
+      background-color: #f7fcfa;
+      box-shadow: 6px 0 23px -10px rgba(0, 0, 0, 0.72);
+    }
+  }
+}
