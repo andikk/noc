@@ -1,5 +1,6 @@
 $primary-color: #4d9a7b;
-$secondary-color: #bbbbbb;
+$secondary-color: #b4eed7;
+$menu-hover-color: #82ae98;
 $tablet-size: 768px;
 
 * {
@@ -7,12 +8,15 @@ $tablet-size: 768px;
 }
 
 .container {
-  max-width: 1920px;
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+
+  @media (min-width: $tablet-size) {
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
 }
 
 //@import "../../node_modules/bootstrap/scss/bootstrap";

@@ -38,10 +38,16 @@
   }
 
   &__main-img {
-    float: left;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    width: 400px;
+
+    width: 100%;
+    height: auto;
+
+    @media (min-width: $tablet-size) {
+      float: left;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      width: 400px;
+    }
   }
 
   &__aside {
