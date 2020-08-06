@@ -1,5 +1,8 @@
 .navigation {
-
+background-color: $primary-color;
+  & a {
+    color: white;
+  }
 
   &__wrapper {
     display: flex;
@@ -84,6 +87,8 @@
 
     @media (min-width: $tablet-size) {
       text-align: center;
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
     }
   }
 

@@ -1,6 +1,8 @@
 .footer {
   color: white;
   background-color: $primary-color;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   &__wrapper {
     @media (min-width: $tablet-size) {
@@ -18,10 +20,15 @@
 
   &__col2 {
     flex: 1;
+    padding-left: 1rem;
   }
 
   &__col3 {
     flex: 1;
+  }
+
+  & a {
+    color: white;
   }
 
 }

@@ -6,6 +6,15 @@ $tablet-size: 768px;
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  max-width: 1920px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 //@import "../../node_modules/bootstrap/scss/bootstrap";
 @import "block/normalize";
 @import "block/header";
@@ -43,6 +52,14 @@ input[type="radio"].visually-hidden {
   &--no-margin {
     margin-right: 0;
   }
+}
+
+a {
+  transition: all 0.5s;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 a[href$=".pdf"]::before,
@@ -92,13 +109,7 @@ a[href$=".zip"]::before {
   }
 }
 
-.container {
-  max-width: 1920px;
-  padding-left: 15px;
-  padding-right: 15px;
 
-  margin: 0 auto;
-}
 
 .vertical {
   display: flex;
