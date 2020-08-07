@@ -381,8 +381,8 @@ th {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem; } }
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem; } }
 
 .header p {
   margin: 0; }
@@ -437,7 +437,11 @@ th {
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .header__info-title-container {
+      width: auto; } }
 
 .header__info-subtitle {
   color: #65b38d;
@@ -457,18 +461,24 @@ th {
       margin-top: 0;
       margin-bottom: 1rem; } }
 
-@media (min-width: 768px) {
-  .header__info-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%; } }
+.header__info-wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  height: 100%;
+  padding-top: 1rem; }
+  @media (min-width: 768px) {
+    .header__info-wrapper {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
 
 @media (min-width: 768px) {
   .header__info-contact {
@@ -484,29 +494,31 @@ th {
   margin-bottom: 0.3rem; }
 
 .header__info-work {
-  margin-bottom: 0.3rem !important;
   text-align: center; }
 
+.header__info-counter {
+  position: relative; }
+  @media (min-width: 768px) {
+    .header__info-counter {
+      margin-right: 5rem; } }
+
 .header__info-num-container {
-  display: block;
-  width: 2.4rem;
-  height: 2.4rem;
+  position: absolute;
+  left: 50%;
+  top: 25px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 2.6rem;
+  height: 2.6rem;
   border: 2px solid #4d9a7b;
   border-radius: 50%;
-  line-height: 2.4rem;
+  line-height: 2.6rem;
   text-align: center;
-  margin-bottom: -20px;
   color: #4d9a7b;
   font-weight: bold;
+  font-size: 1.2rem;
   margin-right: auto !important;
   margin-left: auto !important; }
-
-@media (min-width: 768px) {
-  .header__info-counter {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 200px;
-            flex: 0 0 200px;
-    margin-right: 5rem; } }
 
 .navigation {
   background-color: #4d9a7b; }
@@ -562,9 +574,7 @@ th {
     padding-right: 0;
     max-height: 0;
     overflow: hidden;
-    margin: 0;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin: 0 -15px;
     -webkit-transition: all 0.7s;
     transition: all 0.7s; }
     @media (min-width: 768px) {
@@ -594,11 +604,8 @@ th {
     width: 100%;
     font-size: 1rem;
     text-decoration: none;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem; }
-    .navigation__link:hover {
+    padding: 0.7rem 15px; }
+    .navigation__link:hover, .navigation__link--active {
       background-color: #82ae98; }
     @media (min-width: 768px) {
       .navigation__link {
@@ -751,16 +758,21 @@ th {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
-  @media (min-width: 768px) {
-    .footer__col1 {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 100px;
-              flex: 0 0 100px; } }
+  .footer__col1 {
+    display: none; }
+    @media (min-width: 768px) {
+      .footer__col1 {
+        display: block;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100px;
+                flex: 0 0 100px; } }
   .footer__col2 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
-            flex: 1;
-    padding-left: 1rem; }
+            flex: 1; }
+    @media (min-width: 768px) {
+      .footer__col2 {
+        padding-left: 1rem; } }
   .footer__col3 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -858,3 +870,6 @@ a[href$=".zip"]::before {
 address {
   font-style: inherit;
   margin-bottom: 1rem; }
+
+a {
+  color: #4d9a7b; }

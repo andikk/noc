@@ -14,14 +14,18 @@
 
 
   &__col1 {
+    display: none;
     @media (min-width: $tablet-size) {
+      display: block;
       flex: 0 0 100px;
     }
   }
 
   &__col2 {
     flex: 1;
-    padding-left: 1rem;
+    @media (min-width: $tablet-size) {
+      padding-left: 1rem;
+    }
   }
 
   &__col3 {
