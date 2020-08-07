@@ -95,8 +95,7 @@ gulp.task("copy", function (done) {
 gulp.task("js", function() {
   return gulp.src([
     "source/js/bundle/jquery-3.3.1.min.js",
-    "source/js/bundle/bootstrap.min.js",
-    "source/js/bundle/popper.min.js",
+    "source/js/bundle/odometer.min.js",
     "source/js/bundle/custom.js",
   ])
     .pipe(concat("bundle.js"))

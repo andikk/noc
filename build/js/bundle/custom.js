@@ -10,5 +10,5 @@
      $('.js-menu-btn').toggleClass('js-change'); // Меняем икноку на кнопке
    });
 
-
+   $('.odometer').html(123);
 });

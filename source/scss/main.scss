@@ -20,12 +20,14 @@ $tablet-size: 768px;
 }
 
 //@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../css/odometer-theme-default.css";
 @import "block/normalize";
 @import "block/header";
 @import "block/navigation";
 @import "block/content";
 @import "block/contact";
 @import "block/footer";
+
 
 
 .visually-hidden:not(:focus):not(:active),
@@ -113,8 +115,6 @@ a[href$=".zip"]::before {
   }
 }
 
-
-
 .vertical {
   display: flex;
   flex-direction: column;
@@ -122,4 +122,9 @@ a[href$=".zip"]::before {
   @media (min-width: $tablet-size) {
     flex-direction: column-reverse;
   }
+}
+
+address {
+  font-style: inherit;
+  margin-bottom: 1rem;
 }
