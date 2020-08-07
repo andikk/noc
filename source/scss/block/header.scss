@@ -110,6 +110,7 @@
 
   &__info-address {
     margin-bottom: 0.3rem;
+    white-space: nowrap;
   }
 
   &__info-work {
@@ -119,9 +120,7 @@
   &__info-counter {
     position: relative;
     @media (min-width: $tablet-size) {
-
       margin-right: 5rem;
-
     }
   }
 
