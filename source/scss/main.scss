@@ -2,6 +2,7 @@ $primary-color: #4d9a7b;
 $secondary-color: #b4eed7;
 $menu-hover-color: #82ae98;
 $tablet-size: 768px;
+$desktop-size: 1200px;
 
 * {
   font-family: "Roboto", sans-serif;
@@ -27,8 +28,6 @@ $tablet-size: 768px;
 @import "block/content";
 @import "block/contact";
 @import "block/footer";
-
-
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -119,9 +118,6 @@ a[href$=".zip"]::before {
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet-size) {
-    flex-direction: column-reverse;
-  }
 }
 
 address {

@@ -63,6 +63,11 @@
       padding-left: 1rem;
       padding-top: 0;
       padding-bottom: 0.5rem;
+      font-size: 0.7rem;
+    }
+
+    @media (min-width: $desktop-size) {
+      font-size: 1rem;
     }
   }
 
@@ -71,9 +76,13 @@
 
     @media (min-width: $tablet-size) {
       padding-left: 1rem;
-      font-size: 1.8rem;
+      font-size: 1rem;
       margin-top: 0;
       margin-bottom: 1rem;
+    }
+
+    @media (min-width: $desktop-size) {
+      font-size: 1.8rem;
     }
   }
 
@@ -119,7 +128,7 @@
 
   &__info-counter {
     position: relative;
-    @media (min-width: $tablet-size) {
+    @media (min-width: $desktop-size) {
       margin-right: 5rem;
     }
   }
@@ -129,11 +138,11 @@
     left: 50%;
     top: 25px;
     transform: translateX(-50%);
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 2.8rem;
+    height: 2.8rem;
     border: 2px solid $primary-color;
     border-radius: 50%;
-    line-height: 2.6rem;
+    line-height: 2.8rem;
     text-align: center;
     color: $primary-color;
     font-weight: bold;

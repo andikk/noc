@@ -26,10 +26,11 @@
   }
 
   &__main {
-
+    padding-top: 4rem;
     @media (min-width: $tablet-size) {
       flex: 1;
       padding-right: 2rem;
+      padding-top: 0;
     }
 
     & p {
@@ -39,13 +40,15 @@
 
   &__main-img {
 
-    width: 100%;
+    width: 50%;
+    float: left;
     height: auto;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
 
     @media (min-width: $tablet-size) {
-      float: left;
-      padding-right: 1rem;
-      padding-bottom: 1rem;
+
+
       width: 400px;
     }
   }

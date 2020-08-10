@@ -1,14 +1,22 @@
- $(function(){
+ document.addEventListener("DOMContentLoaded", function(event) {
+   // открытие меню
+   var menuBtn = document.querySelector('.js-menu-btn');
+   var navigationList = document.querySelector('.navigation__list');
+   var navigationLink = document.querySelector('.navigation__link');
 
-   $('.js-menu-btn').click(function() {
-     $('.navigation__list').toggleClass('opened'); // Открываем верхнее меню
-     $('.js-menu-btn').toggleClass('js-change'); // Меняем икноку на кнопке
+   menuBtn.addEventListener('click', function (){
+     navigationList.classList.toggle('opened');
+     menuBtn.classList.toggle('js-change');
    });
 
-   $('.navigation__link').click(function() {
-     $('.navigation__list').toggleClass('opened'); // Открываем верхнее меню
-     $('.js-menu-btn').toggleClass('js-change'); // Меняем икноку на кнопке
+   navigationLink.addEventListener('click', function () {
+     navigationList.classList.toggle('opened');
+     menuBtn.classList.toggle('js-change');
    });
 
-   $('.odometer').html(123);
-});
+
+   // счётчик
+   var odometer = document.querySelector('.odometer');
+   odometer.innerHTML = 203;
+
+ });

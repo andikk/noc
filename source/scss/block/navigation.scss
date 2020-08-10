@@ -1,5 +1,13 @@
 .navigation {
   background-color: $primary-color;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  order: -1;
+
+  @media (min-width: $tablet-size) {
+    order: 0;
+  }
 
   & a {
     color: white;
@@ -10,6 +18,7 @@
     justify-content: space-between;
     padding-top: 4px;
     padding-bottom: 4px;
+
     @media (min-width: $tablet-size) {
       padding: 0;
     }
@@ -17,6 +26,7 @@
 
   &__logo {
     margin-bottom: -3px;
+
     @media (min-width: $tablet-size) {
       display: none;
     }
@@ -108,7 +118,6 @@
   }
 
   &__item {
-
     @media (min-width: $tablet-size) {
       display: flex;
       flex-wrap: wrap;
@@ -118,5 +127,4 @@
       padding: 0;
     }
   }
-
 }
