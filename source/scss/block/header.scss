@@ -1,5 +1,4 @@
 .header {
-
   @media (min-width: $tablet-size) {
     display: flex;
     align-items: stretch;
@@ -42,6 +41,9 @@
 
   &__info {
     width: 100%;
+    @media (min-width: $tablet-size) {
+      margin-bottom: 0;
+    }
   }
 
   &__info-title-container {
@@ -98,13 +100,16 @@
     @media (min-width: $tablet-size) {
       flex-wrap: nowrap;
     }
-
   }
 
   &__info-contact {
+    margin-bottom: 2rem;
+
     @media (min-width: $tablet-size) {
       padding-left: 2rem;
       padding-right: 2rem;
+      text-align: left;
+      margin-bottom: 0;
     }
   }
 
@@ -128,6 +133,8 @@
 
   &__info-counter {
     position: relative;
+    margin-bottom: 2rem;
+
     @media (min-width: $desktop-size) {
       margin-right: 5rem;
     }
@@ -135,8 +142,8 @@
 
   &__info-num-container {
     position: absolute;
-    left: 50%;
-    top: 25px;
+    left: 130%;
+    top: -15px;
     transform: translateX(-50%);
     width: 2.8rem;
     height: 2.8rem;
@@ -149,5 +156,11 @@
     font-size: 1.2rem;
     margin-right: auto!important;
     margin-left: auto!important;
+
+    @media (min-width: 400px) {
+      left: 50%;
+      top: 25px;
+      transform: translateX(-50%);
+    }
   }
 }

@@ -4,6 +4,7 @@
   top: 0;
   z-index: 10;
   order: -1;
+  box-shadow: 0 9px 8px -7px rgba(0, 0, 0, 0.23);
 
   @media (min-width: $tablet-size) {
     margin-bottom: 3rem;
