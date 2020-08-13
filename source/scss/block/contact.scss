@@ -9,17 +9,14 @@
       margin-bottom: 1rem;
     }
 
-
-
-
     @media (min-width: $tablet-size) {
       padding: 1.5rem;
       width: 200px;
       position: absolute;
-      top: -15px;
+      top: -40px;
       right: 10%;
-      background-color: #f7fcfa;
-      box-shadow: 6px 0 23px -10px rgba(0, 0, 0, 0.72);
+      background-color: #f4fbf9;
+      box-shadow: 5px 9px 17px -7px rgba(0, 0, 0, 0.23)
     }
   }
 }

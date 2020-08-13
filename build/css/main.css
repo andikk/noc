@@ -426,6 +426,9 @@ th {
 
 .header__info {
   width: 100%; }
+  @media (min-width: 768px) {
+    .header__info {
+      margin-bottom: 0; } }
 
 .header__info-title-container {
   display: -webkit-box;
@@ -487,10 +490,14 @@ th {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; } }
 
-@media (min-width: 768px) {
-  .header__info-contact {
-    padding-left: 2rem;
-    padding-right: 2rem; } }
+.header__info-contact {
+  margin-bottom: 2rem; }
+  @media (min-width: 768px) {
+    .header__info-contact {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      text-align: left;
+      margin-bottom: 0; } }
 
 .header__info-tel a {
   color: inherit;
@@ -505,15 +512,16 @@ th {
   text-align: center; }
 
 .header__info-counter {
-  position: relative; }
+  position: relative;
+  margin-bottom: 2rem; }
   @media (min-width: 1200px) {
     .header__info-counter {
       margin-right: 5rem; } }
 
 .header__info-num-container {
   position: absolute;
-  left: 50%;
-  top: 25px;
+  left: 130%;
+  top: -15px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 2.8rem;
@@ -527,6 +535,12 @@ th {
   font-size: 1.2rem;
   margin-right: auto !important;
   margin-left: auto !important; }
+  @media (min-width: 400px) {
+    .header__info-num-container {
+      left: 50%;
+      top: 25px;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); } }
 
 .navigation {
   background-color: #4d9a7b;
@@ -536,9 +550,12 @@ th {
   z-index: 10;
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
-          order: -1; }
+          order: -1;
+  -webkit-box-shadow: 0 9px 8px -7px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 9px 8px -7px rgba(0, 0, 0, 0.23); }
   @media (min-width: 768px) {
     .navigation {
+      margin-bottom: 3rem;
       -webkit-box-ordinal-group: 1;
           -ms-flex-order: 0;
               order: 0; } }
@@ -664,24 +681,19 @@ th {
     background-color: #253861; }
   @media (min-width: 768px) {
     .content {
-      padding-top: 3rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start; } }
-  .content__main {
-    padding-top: 4rem; }
-    @media (min-width: 768px) {
-      .content__main {
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
-        padding-right: 2rem;
-        padding-top: 0; } }
-    .content__main p {
-      margin-top: 0; }
+  @media (min-width: 768px) {
+    .content__main {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      padding-right: 2rem;
+      padding-top: 0; } }
   .content__main-img {
     width: 50%;
     float: left;
@@ -751,6 +763,26 @@ th {
       transition: transform .25s ease-out;
       transition: transform .25s ease-out, -webkit-transform .25s ease-out; }
 
+.bread-crumb {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 1rem;
+  color: #6c757d;
+  font-weight: lighter;
+  font-size: 0.8rem; }
+  @media (min-width: 768px) {
+    .bread-crumb {
+      margin-top: -20px; } }
+  .bread-crumb svg {
+    color: rgba(78, 85, 91, 0.4);
+    margin-left: 0.5rem;
+    font-size: 0.8rem; }
+  .bread-crumb__item {
+    display: inline;
+    padding-right: 0.5rem; }
+    .bread-crumb__item a {
+      color: #4d9a7b; }
+
 .contact {
   position: relative;
   margin-top: 4rem; }
@@ -762,11 +794,11 @@ th {
       padding: 1.5rem;
       width: 200px;
       position: absolute;
-      top: -15px;
+      top: -40px;
       right: 10%;
-      background-color: #f7fcfa;
-      -webkit-box-shadow: 6px 0 23px -10px rgba(0, 0, 0, 0.72);
-              box-shadow: 6px 0 23px -10px rgba(0, 0, 0, 0.72); } }
+      background-color: #f4fbf9;
+      -webkit-box-shadow: 5px 9px 17px -7px rgba(0, 0, 0, 0.23);
+              box-shadow: 5px 9px 17px -7px rgba(0, 0, 0, 0.23); } }
 
 .footer {
   color: white;
@@ -865,11 +897,11 @@ a[href$=".zip"]::before {
   background-image: url("../img/file-zip.svg"); }
 
 .user-content p,
-.user-content li {
-  font-size: 20px;
-  line-height: 31px;
-  font-weight: 300;
-  font-style: normal; }
+.user-content h1,
+.user-content h2,
+.user-content h3,
+.user-content h4 {
+  margin-top: 0; }
 
 .user-content img {
   width: 100%;

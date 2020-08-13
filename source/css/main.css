@@ -794,11 +794,11 @@ th {
       padding: 1.5rem;
       width: 200px;
       position: absolute;
-      top: -15px;
+      top: -40px;
       right: 10%;
-      background-color: #f7fcfa;
-      -webkit-box-shadow: 6px 0 23px -10px rgba(0, 0, 0, 0.72);
-              box-shadow: 6px 0 23px -10px rgba(0, 0, 0, 0.72); } }
+      background-color: #f4fbf9;
+      -webkit-box-shadow: 5px 9px 17px -7px rgba(0, 0, 0, 0.23);
+              box-shadow: 5px 9px 17px -7px rgba(0, 0, 0, 0.23); } }
 
 .footer {
   color: white;
