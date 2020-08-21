@@ -744,8 +744,8 @@ th {
       z-index: -1;
       top: 0;
       left: 0;
-      -webkit-transform: translateY(calc(100% - 0.5px));
-              transform: translateY(calc(100% - 0.5px));
+      -webkit-transform: translateY(calc(100% + 1px));
+              transform: translateY(calc(100% + 1px));
       width: 100%;
       height: 100%;
       background-image: linear-gradient(60deg, #82ae98 0%, #82ae98 100%);

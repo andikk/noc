@@ -94,7 +94,7 @@
       z-index: -1;
       top: 0;
       left: 0;
-      transform: translateY(calc(100% - 0.5px));
+      transform: translateY(calc(100% + 1px));
       width: 100%;
       height: 100%;
       background-image: linear-gradient(60deg, $menu-hover-color 0%, $menu-hover-color 100%);
