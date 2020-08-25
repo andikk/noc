@@ -14,9 +14,4 @@
      menuBtn.classList.toggle('js-change');
    });
 
-
-   // счётчик
-   var odometer = document.querySelector('.odometer');
-   odometer.innerHTML = 203;
-
  });
