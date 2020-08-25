@@ -107,9 +107,15 @@
     font-size: 1rem;
     text-decoration: none;
     padding: 0.7rem 15px;
+    border: 1px solid $primary-color;
 
-    &:hover, &--active {
+    &:hover {
+      border: 1px solid #b4eed7;
+    }
+
+    &--active {
       background-color: $menu-hover-color;
+      border: 1px solid $menu-hover-color;
     }
 
     @media (min-width: $tablet-size) {
