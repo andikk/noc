@@ -47,15 +47,9 @@
   }
 
   &__aside {
-
-    display: none;
     background-color: white;
-    @media (min-width: $tablet-size) {
-      position: relative;
-      display: block;
-      flex: 0 0 300px;
-      border: 2px solid $primary-color;
-    }
+    flex: 0 0 300px;
+    border: 2px solid $primary-color;
   }
 
   &__aside-title {

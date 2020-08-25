@@ -13,11 +13,14 @@ $desktop-size: 1200px;
   padding-left: 15px;
 
   @media (min-width: $tablet-size) {
-    max-width: 1920px;
     margin-right: auto;
     margin-left: auto;
   }
 
+  @media (min-width: 1200px) {
+    min-width: 97%;
+    max-width: 1920px;
+  }
 }
 
 //@import "../../node_modules/bootstrap/scss/bootstrap";
