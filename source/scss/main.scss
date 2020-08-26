@@ -11,16 +11,10 @@ $desktop-size: 1200px;
 .container {
   padding-right: 15px;
   padding-left: 15px;
-
-  @media (min-width: $tablet-size) {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  @media (min-width: $desktop-size) {
-    min-width: 97%;
-    max-width: 1920px;
-  }
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  max-width: 1920px;
 }
 
 //@import "../../node_modules/bootstrap/scss/bootstrap";
@@ -135,4 +129,8 @@ address {
 
 a {
   color: $primary-color;
+}
+
+.title {
+  margin-top: 0;
 }

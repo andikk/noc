@@ -9,11 +9,11 @@
   &__link {
     position: relative;
     display: block;
-    padding: .5rem .75rem;
+    padding: 0.5rem 0.75rem;
     margin-left: -1px;
     line-height: 1.25;
     color: $primary-color;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 1px solid #dee2e6;
     text-decoration: none;
   }
@@ -24,6 +24,6 @@
 
   &__link--active {
     background-color: $primary-color;
-    color: white;
+    color: #ffffff;
   }
 }
