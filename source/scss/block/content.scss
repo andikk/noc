@@ -1,36 +1,16 @@
 .content {
   margin-bottom: 3rem;
 
-  /* полоса прокрутки (скроллбар) */
-  ::-webkit-scrollbar {
-    width: 8px; /* ширина для вертикального скролла */
-    height: 8px; /* высота для горизонтального скролла */
-    background-color: #cef1e3;
-
-  }
-
-  /* ползунок скроллбара */
-  ::-webkit-scrollbar-thumb {
-    background-color: #b0d5c7;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #253861;
-  }
-
   @media (min-width: $tablet-size) {
     display: flex;
-   // align-items: flex-start;
+    align-items: flex-start;
   }
 
   &__main {
     @media (min-width: $tablet-size) {
-      //flex: 1;
       padding-right: 2rem;
-      //padding-top: 0;
-      box-sizing: border-box;
-      flex: 0 0 80%;
-      max-width: 80%;
+      padding-top: 0;
+      flex: 1;
     }
   }
 
@@ -53,8 +33,7 @@
 
     @media (min-width: $tablet-size) {
       box-sizing: border-box;
-      flex: 0 0 20%;
-      max-width: 20%;
+      flex: 0 0 300px;
     }
   }
 
@@ -104,6 +83,7 @@
     a:hover {
       color: #ffffff;
     }
+
     a:hover::before {
       transform: translateY(0);
       transition: transform 0.25s ease-out;
