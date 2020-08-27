@@ -764,7 +764,11 @@ th {
           justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  margin-right: -15px; }
+  @media (min-width: 768px) {
+    .news {
+      margin-left: -15px; } }
   .news__image {
     width: 100%;
     margin-bottom: 10px;
@@ -792,9 +796,7 @@ th {
             -ms-flex: 0 0 50%;
                 flex: 0 0 50%;
         max-width: 50%;
-        padding-left: 15px; }
-        .news__item:nth-child(odd) {
-          padding-left: 0; } }
+        padding-left: 15px; } }
     @media (min-width: 1200px) {
       .news__item {
         -webkit-box-flex: 0;
