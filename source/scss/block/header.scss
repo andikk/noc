@@ -60,8 +60,10 @@
   &__info-subtitle {
     color: #65b38d;
     padding-top: 1rem;
+    display: none;
 
     @media (min-width: $tablet-size) {
+      display: block;
       padding-left: 1rem;
       padding-top: 0;
       padding-bottom: 0.5rem;
@@ -75,10 +77,9 @@
 
   &__info-title {
     color: #529375;
-
+    font-size: 1.4rem;
     @media (min-width: $tablet-size) {
       padding-left: 1rem;
-      font-size: 1rem;
       margin-top: 0;
       margin-bottom: 1rem;
     }
@@ -103,7 +104,7 @@
   }
 
   &__info-contact {
-    margin-bottom: 2rem;
+    margin-bottom: 0.7rem;
 
     @media (min-width: $tablet-size) {
       padding-left: 2rem;
@@ -129,13 +130,19 @@
 
   &__info-work {
     text-align: center;
+    display: none;
+    @media (min-width: $desktop-size) {
+      display: block;
+    }
   }
 
   &__info-counter {
     position: relative;
     margin-bottom: 2rem;
+    display: none;
 
     @media (min-width: $desktop-size) {
+      display: block;
       margin-right: 5rem;
     }
   }
